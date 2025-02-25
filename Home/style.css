@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    min-height: 100vh;
+   min-height: 100vh; 
 
 }
 
@@ -42,6 +42,8 @@ body {
     box-sizing: border-box;
     border-bottom: 2px solid gray;
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
     width: 100%;
 }
 
