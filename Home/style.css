@@ -17,14 +17,22 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    img {
+        max-width: 20vw;
+        height: auto;
+    }
 }
 
 .nome {
-    font-size: 125%;
+    font-size: 1rem;
     color: white;
     padding: 1px;
     display: inline-flex;
     align-items: center;
+    img {
+        max-width: 20vw;
+        height: auto;
+    }
 }
 
 .cabecalho {
@@ -34,13 +42,17 @@ body {
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     width: 100%;
+    gap: 30px;
+    align-self: center;
 }
 
 li {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .site {
@@ -48,15 +60,19 @@ li {
     margin: 3px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
-    font-size: 24px;
-    background-color: #ffffff;
+    font-size: 1.2rem;
+    align-items: center;
+    color: rgb(3, 3, 141);
+    padding: 1rem;
+     /* background-color: #ffffff;
     text-align: center;
     border-radius: 16px;
-    padding: 21.5px 21.5px;
+    padding: 21.5px 21.5px ; 
     color: rgb(12, 48, 255);
     transition: 1s;
-    cursor: pointer;
+    cursor: pointer;  */
 }
 
 .site:hover {
@@ -75,24 +91,47 @@ li {
     width: 100%;
 
     img {
-        width: 70vw;
+        max-width: 70vw;
+        height: auto;
     }
 }
 
 p {
     font-family: "Montserrat", serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin: 10px;
+
 }
 
 .logo {
     display: flex;
-    justify-content: left;
-
-    /* img {} */
+    flex-wrap: wrap;
+    img {
+        max-width: 20vw;
+        height: auto;
+    }
 
 }
+.site1{
+    font-family: "Montserrat", serif;
+    margin: 3px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 1.2rem;
+    align-items: center;
+    color: rgb(3, 3, 141);
+    cursor: default;
 
+    border-top: 2px solid black
+    
+}
+/* .texto{
+    display: flex;
+    flex: 1;
+    gap: 30px;
+} */
 /* .nome :hover{
     width: 40px;
     height: 40px;
