@@ -84,16 +84,12 @@ li {
     font-size: 1.5rem;
     align-items: center;
     color: rgb(3, 3, 141);
-    /* padding: 0.4rem; */
-    /* background-color: #ffffff;
-    text-align: center;
-    border-radius: 16px;
-    padding: 21.5px 21.5px ; 
-    color: rgb(12, 48, 255);
-    transition: 1s;
-    cursor: pointer;  */
+   
 }
-
+.site:hover{
+    opacity: 50%;
+    border-top: 0.125rem solid black
+}
 .apresentacao {
     box-sizing: border-box;
     flex: 1;
@@ -118,7 +114,35 @@ li {
     margin: 0.625rem;
 
 }
+.caracteristicas{
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+    margin: 0.625rem;
+    cursor: pointer;
 
+}
+.discricao{
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    padding: 0.5rem;
+    width: 50vw;
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    margin-top: %;
+}
+.discricao table{
+    width: 100%;
+}
+.discricao th{
+    border: 1px solid blue;
+    padding: 5px;
+    text-align: left;
+}
+#infoToggle:checked ~ .discricao{
+    display: block;
+}
 .rodape {
     box-sizing: border-box;
     background-color: rgb(3, 3, 141);
@@ -152,6 +176,9 @@ li {
     display: flex;
     flex-wrap: nowrap;
 }
+.logo1 :hover{
+    opacity: 70%;
+}
 .apresentacaoLancamento {
     flex: 1;
     display: flex;
@@ -163,6 +190,7 @@ li {
 .apresentacaoVideo {
     width: 100vw;
     height: 45vh;
+    margin-top: 0.5%;
 }
 
 .apresentacaoComparacao {
@@ -195,7 +223,25 @@ li {
     display: flex;
     flex-direction: column;
 }
-
+.infoBox{
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+}
+.infoBox table{
+    width: 100%;
+}
+.infoBox th, .infoBox td{
+    border: 1px solid blue;
+    padding: 5px;
+    text-align: left;
+}
+.info:hover + .infoBox{
+    display: block;
+}
 .apresentacaoBotao {
     margin-top: 2%;
     margin-left: 45%;
@@ -211,7 +257,9 @@ li {
     font-family: "Montserrat", serif;
     cursor: pointer;
 }
-
+.apresentacaoBotao:hover{
+    background-color: darkblue;
+}
 #checkbox1 {
     width: 25px;
     height: 25px;
@@ -229,14 +277,65 @@ li {
     height: 25px;
     cursor: pointer;
 }
+.apresentacaoContato{
+    flex: 1;
+    display: flex;
+    margin-left: 30%; 
+    margin-top: 3%;
+}
+.apresentacaoFormulario{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5%;
+    width: 20vw;
+    font-family: "Montserrat", serif;
+    color: rgb(3, 3, 141);
+}
+.formulario{
+    padding: 2%;
+    border-radius: 0.5rem;
+    background-color: rgb(240, 240, 240);
+    font-family: "Montserrat", serif;
+}
+.formulario1{
+    padding: 2%;
+    height: 10%;
+    border-radius: 0.5rem;
+    background-color: rgb(240, 240, 240);
+    font-family: "Montserrat", serif;
+}
+.formularioBotao{
+    font-family: "Montserrat", serif; 
+    border: 0.125rem;
+    border-radius: 5rem;
+    padding: 1% 2%;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
 
+}
+.formularioBotao:hover{
+    background-color: darkblue;
+}
 @media(max-width:1025px) {
     .logo{
         img {
             width: 18vw;
             height: 10vh;
         }
-    
+    }
+    .apresentacaoContato{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    .apresentacaoFormulario{
+        margin-left: 0%;
+        width: 50vw;
+    }
+    .discricao{
+        margin-top: 45%;
     }
 }
 @media (max-width:768px) {
@@ -261,7 +360,9 @@ li {
     .discricaoRanger {
         font-size: 0.8rem;
     }
-
+    .caracteristicas{
+        font-size: 0.8rem;
+    }
     .logo1 {
         width: auto;
     }
@@ -305,6 +406,19 @@ li {
             height: 40%;
         }
     }
+    .apresentacaoContato{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    .apresentacaoFormulario{
+        width: 50vw;
+    }
+    .discricao{
+        font-size: 0.5rem;
+        margin-top: 50%
+    }
 }
 @media(max-width:420px) {
     .logo{
@@ -313,5 +427,22 @@ li {
             height: 5vh;
         }
     
+    }
+    .apresentacaoContato{
+        flex-direction: column;
+    }
+    .discricao{
+        margin-top: 60%;
+    }
+}
+@media screen and (orientation:portrait) {
+    .apresentacaoContato{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    .apresentacaoFormulario{
+        width: 70vw;
     }
 }

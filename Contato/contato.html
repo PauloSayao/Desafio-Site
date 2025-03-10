@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ford Lançamento</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/ford-96.png">
 </head>
 <body>
     <header class="cabecalho">
@@ -18,14 +19,23 @@
         </ol>
         <div id="fantasma"></div>
     </header>
-<main class="apresentacaoLancamento">
+<main class="apresentacaoContato">
         <div><img src="/img/XL Cabine.jpg" alt="Carro XL cabine larga"></div>
-        <div><h1>Sobre Voçê</h1>
-        <input type="text" id="name" name="nome" placeholder="Nome*">
-        <input type="text" id="email" name="email" placeholder="Email*">
-        <input type="text" id="cpf" name="cpf" placeholder="CPF*">
-        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome*">
-        <input type="text" id="telefone" name="telefone" placeholder="Telefone*"></div>
+        <div class="apresentacaoFormulario"><h1>Sobre Você</h1>
+        <input class="formulario" type="text" id="name" name="nome" placeholder="Nome*">
+        <input class="formulario" type="text" id="email" name="email" placeholder="Email*">
+        <input class="formulario" type="text" id="cpf" name="cpf" placeholder="CPF*">
+        <input class="formulario" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome*">
+        <input class="formulario" type="text" id="telefone" name="telefone" placeholder="Telefone*">
+        <select class="formulario" id="tipoContato" name="Motivo do Contato" placeholder="Motivo do Contato*">
+            <option value="motivo">Motivo do Contato</option>
+            <option value="elogio">Elogio</option>
+            <option value="reclamação">Reclamação</option>
+            <option value="solicitação">Solicitação</option>
+          </select>
+          <textarea class="formulario1" id="subject" name="subject" placeholder="Write something.."></textarea>
+          <button class="formularioBotao">Enviar</button>
+        </div>
         
 
 </main>
