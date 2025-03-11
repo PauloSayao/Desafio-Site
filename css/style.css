@@ -84,6 +84,8 @@ li {
     font-size: 1.5rem;
     align-items: center;
     color: rgb(3, 3, 141);
+    /* transition: opacity 0.3s ease;
+    transition: border-top 0.3s ease; */
 
 }
 
@@ -124,7 +126,6 @@ li {
 .discricao {
     display: flex;
     background: white;
-    /* padding: 0.5rem; */
     width: 50vw;
     font-size: 1rem;
     font-family: "Montserrat", serif;
@@ -173,15 +174,12 @@ li {
     flex: 1;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .apresentacaoVideo {
     width: 100vw;
     height: 45vh;
     margin-top: 0.5%;
-    /* aspect-ratio: 16/9; */
 }
 
 .apresentacaoComparacao {
@@ -356,13 +354,6 @@ li {
     }
 
 }
-
-/* @media (max-width:860px) {
-    .apresentacaoContato {
-        display: flex;
-        align-items:center;
-    }
-} */
 
 @media (max-width:768px) {
     .apresentacao {
