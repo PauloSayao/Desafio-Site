@@ -84,12 +84,14 @@ li {
     font-size: 1.5rem;
     align-items: center;
     color: rgb(3, 3, 141);
-   
+
 }
-.site:hover{
+
+.site:hover {
     opacity: 50%;
     border-top: 0.125rem solid black
 }
+
 .apresentacao {
     box-sizing: border-box;
     flex: 1;
@@ -107,16 +109,19 @@ li {
         height: auto;
     }
 }
-.apresentacao1{
+
+.apresentacao1 {
     align-items: center;
 }
+
 .discricaoRanger {
     font-family: "Montserrat", serif;
     font-size: 1.2rem;
     margin: 0.625rem;
 
 }
-.discricao{
+
+.discricao {
     display: flex;
     background: white;
     /* padding: 0.5rem; */
@@ -125,6 +130,7 @@ li {
     font-family: "Montserrat", serif;
     text-align: justify;
 }
+
 .rodape {
     box-sizing: border-box;
     background-color: rgb(3, 3, 141);
@@ -158,9 +164,11 @@ li {
     display: flex;
     flex-wrap: nowrap;
 }
-.logo1 :hover{
+
+.logo1 :hover {
     opacity: 70%;
 }
+
 .apresentacaoLancamento {
     flex: 1;
     display: flex;
@@ -171,7 +179,7 @@ li {
 
 .apresentacaoVideo {
     width: 100vw;
-    height: 45vh; 
+    height: 45vh;
     margin-top: 0.5%;
     /* aspect-ratio: 16/9; */
 }
@@ -202,11 +210,13 @@ li {
     align-items: center;
     gap: 5%;
 }
-.checkboxLetter2{
+
+.checkboxLetter2 {
     display: flex;
     flex-direction: column;
 }
-.infoBox{
+
+.infoBox {
     display: none;
     position: absolute;
     background: white;
@@ -214,17 +224,22 @@ li {
     padding: 10px;
     width: 200px;
 }
-.infoBox table{
+
+.infoBox table {
     width: 100%;
 }
-.infoBox th, .infoBox td{
+
+.infoBox th,
+.infoBox td {
     border: 1px solid blue;
     padding: 5px;
     text-align: left;
 }
-.info:hover + .infoBox{
+
+.info:hover+.infoBox {
     display: block;
 }
+
 .apresentacaoBotao {
     margin-top: 2%;
     margin-left: 45%;
@@ -240,9 +255,11 @@ li {
     font-family: "Montserrat", serif;
     cursor: pointer;
 }
-.apresentacaoBotao:hover{
+
+.apresentacaoBotao:hover {
     background-color: darkblue;
 }
+
 #checkbox1 {
     width: 25px;
     height: 25px;
@@ -260,35 +277,46 @@ li {
     height: 25px;
     cursor: pointer;
 }
-.apresentacaoContato{
+
+.apresentacaoContato {
     flex: 1;
     display: flex;
-    margin-left: 30%; 
+    margin-left: 30%;
     margin-top: 3%;
 }
-.apresentacaoFormulario{
+
+.apresentacaoFormulario {
     display: flex;
     flex-direction: column;
-    gap: 0.5%;
+    gap: 0.5rem;
     width: 20vw;
     font-family: "Montserrat", serif;
     color: rgb(3, 3, 141);
 }
-.formulario{
+
+.formularioPrincipal {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.formulario {
     padding: 2%;
     border-radius: 0.5rem;
     background-color: rgb(240, 240, 240);
     font-family: "Montserrat", serif;
 }
-.formulario1{
+
+.formulario1 {
     padding: 2%;
-    height: 10%;
+    height: 9vh;
     border-radius: 0.5rem;
     background-color: rgb(240, 240, 240);
     font-family: "Montserrat", serif;
 }
-.formularioBotao{
-    font-family: "Montserrat", serif; 
+
+.formularioBotao {
+    font-family: "Montserrat", serif;
     border: 0.125rem;
     border-radius: 5rem;
     padding: 1% 2%;
@@ -297,32 +325,45 @@ li {
     color: white;
 
 }
-.formularioBotao:hover{
+
+.formularioBotao:hover {
     background-color: darkblue;
 }
+
 @media(max-width:1025px) {
-    .apresentacao{
+    .apresentacao {
         flex-direction: column;
         align-items: left;
     }
-    .logo{
+
+    .logo {
         img {
             width: 18vw;
             height: 10vh;
         }
     }
-    .apresentacaoContato{
+
+    .apresentacaoContato {
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         margin-top: 0;
-        margin-left: 10%;
+        margin-left: 30%;
     }
-    .apresentacaoFormulario{
+
+    .apresentacaoFormulario {
         margin-left: 0%;
         width: 50vw;
     }
 
 }
+
+@media (max-width:860px) {
+    .apresentacaoContato {
+        display: flex;
+        align-items:center;
+    }
+}
+
 @media (max-width:768px) {
     .apresentacao {
         margin-top: 30%;
@@ -345,16 +386,20 @@ li {
     .discricaoRanger {
         font-size: 0.5rem;
     }
-    .caracteristicas{
+
+    .caracteristicas {
         font-size: 0.8rem;
     }
+
     .logo1 {
         width: auto;
-        img{
+
+        img {
             width: 7vw;
         }
     }
-    .logoFord{
+
+    .logoFord {
         width: 10vw;
     }
 
@@ -397,43 +442,49 @@ li {
             height: 40%;
         }
     }
-    .apresentacaoContato{
+
+    .apresentacaoContato {
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         margin-top: 0;
         margin-left: 10%;
     }
-    .apresentacaoFormulario{
+
+    .apresentacaoFormulario {
         width: 50vw;
     }
-    .discricao{
+
+    .discricao {
         font-size: 0.5rem;
 
     }
 }
+
 @media(max-width:420px) {
-    .logo{
+    .logo {
         img {
             width: 20vw;
             height: 5vh;
         }
-    
-    }
-    .apresentacaoContato{
-        flex-direction: column;
-    }
-    .discricao{
 
     }
-}
-@media screen and (orientation:portrait) {
-    .apresentacaoContato{
+
+    .apresentacaoContato {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .discricao {}
+}
+
+@media screen and (orientation:portrait) {
+    .apresentacaoContato {
+        flex-direction: column;
+        align-items: baseline;
         margin-top: 0;
         margin-left: 10%;
     }
-    .apresentacaoFormulario{
+
+    .apresentacaoFormulario {
         width: 70vw;
     }
 }

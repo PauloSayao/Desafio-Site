@@ -22,22 +22,27 @@
     </header>
     <main class="apresentacaoContato">
         <div><img src="/img/XL Cabine.jpg" alt="Carro XL cabine larga"></div>
-        <div class="apresentacaoFormulario">
-            <h1>Sobre Você</h1>
-            <input class="formulario" type="text" id="name" name="nome" placeholder="Nome*">
-            <input class="formulario" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome*">
-            <input class="formulario" type="text" id="cpf" name="cpf" placeholder="CPF*">
-            <input class="formulario" type="text" id="email" name="email" placeholder="Email*">
-            <input class="formulario" type="text" id="telefone" name="telefone" placeholder="Telefone*">
-            <select class="formulario" id="tipoContato" name="Motivo do Contato" placeholder="Motivo do Contato*">
-                <option value="motivo">Motivo do Contato</option>
-                <option value="elogio">Elogio</option>
-                <option value="reclamação">Reclamação</option>
-                <option value="solicitação">Solicitação</option>
-            </select>
-            <textarea class="formulario1" id="subject" name="subject" placeholder="Escreva Aqui..."></textarea>
-            <button class="formularioBotao">Enviar</button>
-        </div>
+
+
+        <form class="formularioPrincipal" action="../Home/index.html" method="get">
+            <div class="apresentacaoFormulario">
+                <h2>Sobre Você</h2>
+                <input class="formulario" type="nome" id="name" name="nome" placeholder="Nome*" required>
+                <input class="formulario" type="sobrenome" id="sobrenome" name="sobrenome" placeholder="Sobrenome*" required>
+                <input class="formulario" type="cpf" id="cpf" name="cpf" placeholder="CPF*">
+                <input class="formulario" type="email" id="email" name="email" placeholder="Email*" required>
+                <input class="formulario" type="telefone" id="telefone" name="telefone" placeholder="Telefone*">
+                <select class="formulario" id="tipoContato" name="Motivo do Contato" placeholder="Motivo do Contato*">
+                    <option value="motivo">Motivo do Contato</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="solicitação">Solicitação</option>
+                </select>
+                <textarea class="formulario1" id="texto" name="mensagem" placeholder="Escreva Aqui..."></textarea>
+                <button type="submit" class="formularioBotao">Enviar</button>
+
+            </div>
+        </form>
 
 
     </main>
