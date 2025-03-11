@@ -357,12 +357,12 @@ li {
 
 }
 
-@media (max-width:860px) {
+/* @media (max-width:860px) {
     .apresentacaoContato {
         display: flex;
         align-items:center;
     }
-}
+} */
 
 @media (max-width:768px) {
     .apresentacao {
@@ -448,6 +448,9 @@ li {
         align-items: baseline;
         margin-top: 0;
         margin-left: 10%;
+        img{
+            width: 50vw;
+        }
     }
 
     .apresentacaoFormulario {
@@ -471,10 +474,12 @@ li {
 
     .apresentacaoContato {
         flex-direction: column;
+        img{
+            width: 70vw;
+        }
     }
-
-    .discricao {}
 }
+
 
 @media screen and (orientation:portrait) {
     .apresentacaoContato {
