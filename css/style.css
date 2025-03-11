@@ -94,12 +94,12 @@ li {
     box-sizing: border-box;
     flex: 1;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
     align-items: center;
     width: 100%;
-    align-content: center;
-    gap: 0.125rem;
+    align-content: left;
+    gap: 0.9rem;
     margin-top: 1.25rem;
 
     img {
@@ -107,40 +107,23 @@ li {
         height: auto;
     }
 }
-
+.apresentacao1{
+    align-items: center;
+}
 .discricaoRanger {
     font-family: "Montserrat", serif;
     font-size: 1.2rem;
     margin: 0.625rem;
 
 }
-.caracteristicas{
-    font-family: "Montserrat", serif;
-    font-size: 1.2rem;
-    margin: 0.625rem;
-    cursor: pointer;
-
-}
 .discricao{
-    display: none;
-    position: absolute;
+    display: flex;
     background: white;
-    border: 1px solid black;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     width: 50vw;
     font-size: 1rem;
     font-family: "Montserrat", serif;
-}
-.discricao table{
-    width: 100%;
-}
-.discricao th{
-    border: 1px solid blue;
-    padding: 5px;
-    text-align: left;
-}
-#infoToggle:checked ~ .discricao{
-    display: block;
+    text-align: justify;
 }
 .rodape {
     box-sizing: border-box;
@@ -188,8 +171,9 @@ li {
 
 .apresentacaoVideo {
     width: 100vw;
-    height: 45vh;
+    height: 45vh; 
     margin-top: 0.5%;
+    /* aspect-ratio: 16/9; */
 }
 
 .apresentacaoComparacao {
@@ -317,6 +301,10 @@ li {
     background-color: darkblue;
 }
 @media(max-width:1025px) {
+    .apresentacao{
+        flex-direction: column;
+        align-items: left;
+    }
     .logo{
         img {
             width: 18vw;
@@ -333,9 +321,7 @@ li {
         margin-left: 0%;
         width: 50vw;
     }
-    .discricao{
-        margin-top: 45%;
-    }
+
 }
 @media (max-width:768px) {
     .apresentacao {
@@ -357,13 +343,19 @@ li {
     }
 
     .discricaoRanger {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
     .caracteristicas{
         font-size: 0.8rem;
     }
     .logo1 {
         width: auto;
+        img{
+            width: 7vw;
+        }
+    }
+    .logoFord{
+        width: 10vw;
     }
 
     .nome {
@@ -416,7 +408,7 @@ li {
     }
     .discricao{
         font-size: 0.5rem;
-        margin-top: 50%
+
     }
 }
 @media(max-width:420px) {
@@ -431,7 +423,7 @@ li {
         flex-direction: column;
     }
     .discricao{
-        margin-top: 60%;
+
     }
 }
 @media screen and (orientation:portrait) {
