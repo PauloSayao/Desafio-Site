@@ -84,9 +84,6 @@ li {
     font-size: 1.5rem;
     align-items: center;
     color: rgb(3, 3, 141);
-    /* transition: opacity 0.3s ease;
-    transition: border-top 0.3s ease; */
-
 }
 
 .site:hover {
@@ -352,7 +349,6 @@ li {
         margin-left: 0%;
         width: 50vw;
     }
-
 }
 
 @media (max-width:768px) {
@@ -433,7 +429,6 @@ li {
             height: 40%;
         }
     }
-
     .apresentacaoContato {
         flex-direction: column;
         align-items: baseline;
